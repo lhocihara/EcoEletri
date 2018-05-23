@@ -1,0 +1,226 @@
+select .cmd_cor{
+  border:0;
+outline-color: transparent;
+overflow-y: hidden;
+height: 110px;
+}
+select .cmd_cor > option{
+border:0px solid transparent;
+display:inline-block;
+font-size: 21px;
+width: 23px;
+}
+
+.box_manutencao,.img_manutencao, .msg_manutencao{
+  margin: 0;
+  padding: 0;
+}
+
+.box_manutencao{
+  position: absolute;
+  top: calc(50% - 103px);
+  left: calc(50% - 204px);
+  width: 400px;
+  /*box-shadow: 2px 2px 2px;*/
+}
+
+.img_manutencao{
+  margin: auto;
+  padding-left: 15px;
+  background-image: url("../img/manutencao.svg");
+  background-size: 100% 100%;
+  display: block;
+  width: 190px;
+  height: 190px;
+}
+
+.msg_manutencao{
+  text-align: center;
+}
+
+.box_manutencao a{
+  color: rgb(105, 158, 194);
+  text-decoration: none;
+}
+
+.box_manutencao a:hover .msg_manutencao{
+  text-decoration: underline;
+}
+
+.msg_erro{
+  text-align: center;
+  color: rgb(215, 2, 34);
+  margin: 3px;
+}
+
+.box_menu_home{
+  text-align: center;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  border-bottom: 2px solid rgb(210, 224, 183);
+}
+
+.box_menu_home > a > figure{
+  width: 160px;
+  height: 160px;
+  padding-bottom: 45px;
+  padding-left: 40px;
+  padding-right: 40px;
+  padding-top: 25px;
+  margin-right: 3%;
+  margin-left: 3%;
+  box-shadow: 0px 0px 8px 8px rgb(195, 219, 147);
+  border-radius: 100%;
+  display: inline-block;
+}
+.box_menu_home > a > figure > img {
+  width: 100%;
+  height: 100%;
+}
+
+.box_menu_home > a > figure > figcaption {
+  color: black;
+  margin: 0;
+}
+
+.box_menu_home > a > figure:hover{
+  animation: exp_shadow 1s alternate infinite;
+}
+
+@keyframes exp_shadow{
+	from{
+    border-color: #7bbce8;
+    box-shadow: 0px 0px 8px 6px #7bbce8;
+	}
+	to{
+    border-color: transparent;
+    border: 0px;
+    box-shadow: 0px 0px 20px 15px #7bbce8;
+	}
+}
+
+#form_calc{
+  margin: auto;
+}
+
+select.bandeiras{
+  outline-color: transparent;
+  width: 45px;
+  height: 45px;
+  display: inline;
+  border: 0px;
+  /*-webkit-appearance:none;*/
+  line-height:30px;
+}
+
+select.bandeiras > option{
+  font-size: 35px;
+  width: 45px;
+}
+
+.btn_fecha{
+  position: absolute;
+  right: 5px;
+  top: 5px;
+}
+
+.form_login{
+  float:right;
+  background-color:white;
+  width:250px;
+  height:110px;
+  border: 2px solid rgb(192, 221, 135);
+  margin-top: 28px;
+}
+
+.fnt_pequena{
+  font-size:14px;
+}
+
+.fnt_micro{
+  font-size:13px;
+}
+
+.aba_controlador{
+	width: 100%;
+	height: auto;
+	position: relative;
+	display: block;
+	overflow: auto;
+}
+.aba_controlador #aba_menu{
+		position: relative;
+		overflow:hidden;
+		cursor:pointer;
+		padding: 0;
+		z-index: 2;
+}
+.aba_controlador #aba_menu:first-child{
+	margin-left: 0px;
+}
+.aba_controlador #aba_conteudo{
+	position: relative;
+	top: -1px;
+	width:auto;
+	height: calc(100% - 10px);
+	border: 2px solid rgb(210, 224, 183);
+	z-index: 1;
+}
+.aba_controlador .abas li{
+	display:inline;
+	list-style: none;
+	float:left;
+}
+
+.aba{
+	width:170px;
+	height:30px;
+	border-left: 2px solid rgb(195, 219, 147);
+	border-top: 2px solid rgb(195, 219, 147);
+	border-right: 2px solid rgb(195, 219, 147);
+	border-bottom: 2px solid rgb(195, 219, 147);
+	text-align:center;
+	margin-left: 2px;
+	margin-right: 2px;
+	z-index: 2;
+  display: inline-block;
+}
+.aba span{
+	position: relative;
+	top:calc(50% - 10px);
+}
+.aba:hover{
+	background-color: white;
+	border-color: rgb(123, 188, 232);
+  box-shadow: 2px 2px 0px rgb(123, 188, 232);
+}
+
+.ativa{
+	width:100px;
+	height:30px;
+	border:solid 1 px;
+	text-align:center;
+
+}
+.ativa span, .selected span{
+	color:#fff;
+
+}
+.aba_controlador .conteudo{
+	width:100%;
+	display:none;
+  min-height:435px;
+}
+.selected{
+	text-align:center;
+	border: 2px solid rgb(93, 93, 93);
+	background-color: rgb(210, 224, 183);
+}
+
+.selected:hover{
+  box-shadow: 0px;
+}
+
+.selected span{
+	color: rgb(93, 93, 93);
+}

@@ -1,0 +1,184 @@
+html{
+  min-width: 840px;
+}
+
+#conteudo {
+  max-width: calc(90% - 120px);
+  min-height: 560px;
+  border: 3px solid #3399ff;
+  margin: 65px auto 5px auto;
+  padding-top: 10px;
+  padding-left: 60px;
+  padding-bottom: 5px;
+  padding-right: 60px;
+  background-color: white;
+  text-align: left;
+  }
+
+h1{
+  text-align: center;
+  margin: 5px;
+  font-size: 40px;
+}
+
+h2{
+  text-align: center;
+  margin: 0px 0 10px 0;
+  font-size: 17px;
+  font-weight: 300;
+
+}
+
+a:link, a:visited{
+  color: rgb(123, 188, 232);
+}
+
+a:active{
+  color: rgb(196, 192, 192);
+}
+
+input[type="text"], input[type="date"],input[type="number"],input[type="password"], select,textarea{
+  font-size: 14px;
+  padding-right: 10px;
+  padding-left: 10px;
+  cursor:pointer;
+  border-radius: 10px;
+  border: 2px solid rgb(196, 192, 192);
+}
+
+input[type="number"]{
+  width: 80px;
+  text-align: right;
+}
+
+input[type="text"]:hover, input[type="text"]:focus,
+input[type="date"]:hover, input[type="date"]:focus,
+input[type="number"]:hover, input[type="number"]:focus,
+input[type="password"]:hover, input[type="password"]:focus,
+select:hover, select:focus,
+textarea:hover, textarea:focus {
+  border-color: rgb(123, 188, 232);
+  outline-style: none;
+}
+
+input[type="submit"],input[type="button"]{
+  background-color: transparent;
+  margin: 2px;
+  border: 2px solid rgb(192, 221, 135);
+  padding-top: 2px;
+  padding-bottom: 2px;
+  padding-left: 9px;
+  padding-right: 9px;
+  color: rgb(93, 93, 93);
+  background: white;
+  /*box-shadow: 2px 1px 0px rgb(210, 224, 183);*/
+}
+
+input[type="submit"]:hover,input[type="button"]:hover{
+  cursor: pointer;
+  border-color: rgb(123, 188, 232);
+  box-shadow: 2px 2px 0px rgb(123, 188, 232);
+}
+
+#box_login{
+  width: auto;
+  min-height: 150px;
+  padding: 10px;
+  position: absolute;
+  top:  calc(50% - 100px);
+  left: calc(50% - 175px);
+  background-color: rgb(217, 224, 202);
+  z-index: 1000;
+  transition: 1s;
+}
+
+.np_{
+  display: none;
+}
+
+.ap_box_log{
+  animation: ap_box_log 1s;
+}
+
+@keyframes ap_box_log{
+	from{
+    opacity:0;
+    top:0;
+	}
+	to{
+	  opacity:1;
+	}
+}
+
+#box_usuario{
+  border:2px solid rgb(192, 221, 135);
+  padding: 8px;
+  padding-top: 8px;
+  position: absolute;
+  bottom: 35px;
+  right: 2px;
+  text-align:left;
+}
+
+.ap_box_usuario{
+  animation: ap_box_usuario 0.7s;
+  animation-delay: 0.3s;
+}
+
+@keyframes ap_box_usuario{
+	0%{
+    opacity: 0;
+    right: 70px;
+	}
+  100%{
+    opacity: 1;
+    right: 0px;
+  }
+
+  /*
+  0%{
+    opacity: 0;
+    right: 0px;
+	}
+	25%{
+    right: 60px;
+  }
+  50%{
+    right: -40px;
+  }
+  75%{
+    right: 35px;
+  }
+  100%{
+    opacity: 1;
+    right: 0px;
+  }*/
+}
+
+.verde {
+    background-color: rgb(168, 196, 110);
+}
+.amarelo {
+    background-color: rgb(251, 237, 156);
+}
+.vermelho1 {
+    background-color: rgb(212, 132, 98);
+}
+.vermelho2 {
+    background-color: rgb(164, 24, 27);
+}
+.txt_esquerda{
+  text-align: left;
+}
+
+.txt_centro{
+  text-align: center;
+}
+
+.txt_direita{
+  text-align: right;
+}
+
+.n_borda{
+  border: 0;
+}

@@ -1,0 +1,4 @@
+/*Página responsavel pela estilização da estrutura base do site*/
+@import url("estrutura.css");
+/*Página responsavel pela estilização dos componentes do site*/
+@import url("componentes_pg.css");
